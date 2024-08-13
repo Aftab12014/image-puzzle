@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Puzzle Game</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my  Puzzle</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="puzzle-container">
-    <div id="puzzle">
-      <!-- Drop zones for the puzzle pieces -->
-      <div class="dropzone" data-piece="1"></div>
-      <div class="dropzone" data-piece="2"></div>
-      <div class="dropzone" data-piece="3"></div>
-      <div class="dropzone" data-piece="4"></div>
-      <div class="dropzone" data-piece="5"></div>
-      <div class="dropzone" data-piece="6"></div>
-      <div class="dropzone" data-piece="7"></div>
-      <div class="dropzone" data-piece="8"></div>
-      <div class="dropzone" data-piece="9"></div>
+    <div id="puzzle-container">
+        <div id="puzzle">
+            <!-- Drop zones for the puzzle pieces -->
+            <div class="dropzone" data-piece="1"></div>
+            <div class="dropzone" data-piece="2"></div>
+            <div class="dropzone" data-piece="3"></div>
+            <div class="dropzone" data-piece="4"></div>
+            <div class="dropzone" data-piece="5"></div>
+            <div class="dropzone" data-piece="6"></div>
+            <div class="dropzone" data-piece="7"></div>
+            <div class="dropzone" data-piece="8"></div>
+            <div class="dropzone" data-piece="9"></div>
+        </div>
+        <div id="pieces">
+            <!-- Draggable puzzle pieces -->
+            <div class="piece" draggable="true" data-piece="1"></div>
+            <div class="piece" draggable="true" data-piece="2"></div>
+            <div class="piece" draggable="true" data-piece="3"></div>
+            <div class="piece" draggable="true" data-piece="4"></div>
+            <div class="piece" draggable="true" data-piece="5"></div>
+            <div class="piece" draggable="true" data-piece="6"></div>
+            <div class="piece" draggable="true" data-piece="7"></div>
+            <div class="piece" draggable="true" data-piece="8"></div>
+            <div class="piece" draggable="true" data-piece="9"></div>
+        </div>
     </div>
-    <div id="pieces">
-      <!-- Draggable puzzle pieces -->
-      <div class="piece draggable" draggable="true" data-piece="1"></div>
-      <div class="piece draggable" draggable="true" data-piece="2"></div>
-      <div class="piece draggable" draggable="true" data-piece="3"></div>
-      <div class="piece draggable" draggable="true" data-piece="4"></div>
-      <div class="piece draggable" draggable="true" data-piece="5"></div>
-      <div class="piece draggable" draggable="true" data-piece="6"></div>
-      <div class="piece draggable" draggable="true" data-piece="7"></div>
-      <div class="piece draggable" draggable="true" data-piece="8"></div>
-      <div class="piece draggable" draggable="true" data-piece="9"></div>  
-    </div>
-  </div>
-  <div id="status">Moves: <span id="move-count">0</span></div>
-  <button id="restart-button">Restart</button>
-  <script src="script.js"></script>
+    <div id="status">Moves: <span id="move-count">0</span></div>
+    <button id="restart-button">Restart</button>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,78 +1,67 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-  }
-  
-  #puzzle-container {
-    display: flex;
-    gap: 20px;
-  }
-  
-  #puzzle, #pieces {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
-    gap: 5px;
-  }
-  
-  .piece, .dropzone {
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-    background-color: #ddd; /* Placeholder background */
-    border: 1px solid #999;
-    position: relative;
-  }
-  
-  .piece::before {
-    content: attr(data-piece);
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  .draggable {
-    cursor: grab;
-  }
-  
-  [data-piece="9"] { background-image: url('1.jpg'); }
-  [data-piece="8"] { background-image: url('2.jpg'); }
-  [data-piece="7"] { background-image: url('3.jpg'); }
-  [data-piece="6"] { background-image: url('4.jpg'); }
-  [data-piece="5"] { background-image: url('5.jpg'); }
-  [data-piece="4"] { background-image: url('6.jpg'); }
-  [data-piece="3"] { background-image: url('7.jpg'); }
-  [data-piece="2"] { background-image: url('8.jpg'); }
-  [data-piece="1"] { background-image: url('9.jpg'); }
-  
-  .dropzone {
-    background-color: #f9f9f9;
-    border: 2px dashed #ccc;
-  }
-  
-  #status {
-    margin-top: 20px;
-    font-size: 18px;
-  }
-  
-  #restart-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  #restart-button:hover {
-    background-color: #218838;
-  }
-  
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#puzzle-container {
+  display: flex;
+  gap: 20px;
+}
+
+#puzzle, #pieces {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+}
+
+.piece, .dropzone {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-color: #ddd; /* Placeholder background */
+  border: 1px solid #999;
+  position: relative;
+}
+
+.dropzone {
+  background-color: #f9f9f9;
+  border: 2px dashed #ccc;
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#restart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#restart-button:hover {
+  background-color: #218838;
+}
+
+/* Background images for puzzle pieces */
+.piece[data-piece="9"] { background-image: url('1.jpg'); }
+.piece[data-piece="8"] { background-image: url('2.jpg'); }
+.piece[data-piece="7"] { background-image: url('3.jpg'); }
+.piece[data-piece="6"] { background-image: url('4.jpg'); }
+.piece[data-piece="5"] { background-image: url('5.jpg'); }
+.piece[data-piece="4"] { background-image: url('6.jpg'); }
+.piece[data-piece="3"] { background-image: url('7.jpg'); }
+.piece[data-piece="2"] { background-image: url('8.jpg'); }
+.piece[data-piece="1"] { background-image: url('9.jpg'); }
